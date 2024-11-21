@@ -6,7 +6,7 @@ arquivo = os.path.join(os.path.dirname(__file__), 'usuario.json')
 def carregar_usuario():
     if not os.path.exists(arquivo):
         with open(arquivo, 'w') as f:
-            json.dump([], f, indent=4)  # Inicializa como lista vazia
+            json.dump([], f, indent=4)  
 
     with open(arquivo, 'r') as f:
         return json.load(f)
